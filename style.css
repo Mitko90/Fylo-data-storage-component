@@ -57,7 +57,7 @@ body{
 }
 
 .left{
-    pading: var(--padding);
+    padding: var(--padding);
     padding-right: 9rem;
     border-radius: var(--border-radius);
     border-top-right-radius: 7rem;
