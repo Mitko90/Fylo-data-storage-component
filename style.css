@@ -87,11 +87,11 @@ body{
 }
 
 .info{
-    color: var(--Grayish-Blue);
+    color: var(--Pale-Blue);
 }
 
 .info span{
-    color: var(--Pale-Blue);
+    font-weight: var(--fw-bold);
 }
 
 .bar{
