@@ -16,7 +16,7 @@
     box-sizing: border-box;
 }
 
- .visually-hidden:not(:focus):not(:active) {
+.visually-hidden:not(:focus):not(:active) {
     clip: rect(0 0 0 0); 
     clip-path: inset(50%);
     height: 1px;
@@ -47,6 +47,8 @@ body{
 }
 
 .component{
+    --padding: 3rem;
+    --border-radius: .5rem;
     gap: 2rem;
 }
 
@@ -55,7 +57,9 @@ body{
 }
 
 .left{
-    padding: 2rem 9rem 2rem 2rem;
+    padding: var(--padding);
+    padding-right: 9rem;
+    border-radius: var(--border-radius);
     border-top-right-radius: 7rem;
 }
 
@@ -73,11 +77,11 @@ body{
 }
 
 .right{
-    padding: 2rem;
+    padding: var(--padding);
     color: white;
     width: 30rem;
     align-self: flex-end;
-    border-radius: .5rem;
+    border-radius: var(--border-radius);
 
     position: relative;
 }
@@ -87,7 +91,7 @@ body{
 }
 
 .info span{
-    color: white;
+    color: var(--Pale-Blue);
 }
 
 .bar{
@@ -116,7 +120,7 @@ body{
 
 .bar::after{
     width: 1rem;
-    background-color: #fff;
+    background-color: var(--Pale-Blue);
     left: calc(75% - 1rem);
 }
 
@@ -124,7 +128,7 @@ body{
     position: absolute;
     top: -3rem;
     right: 2rem;
-    background-color: white;
+    background-color: var(--Pale-Blue);
     color: var(--Grayish-Blue);
     padding: .5rem 1rem;
     border-radius: .5rem;
