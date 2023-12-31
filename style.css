@@ -16,16 +16,6 @@
     box-sizing: border-box;
 }
 
-.visually-hidden:not(:focus):not(:active) {
-    clip: rect(0 0 0 0); 
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap; 
-    width: 1px;
-  }
-
 .flex{
     display: flex;
 }
@@ -47,8 +37,6 @@ body{
 }
 
 .component{
-    --border-radius: .5rem;
-    --paddinng: 3rem;
     gap: 2rem;
 }
 
@@ -57,9 +45,7 @@ body{
 }
 
 .left{
-    padding: var(--padding);
-    padding-right: 9rem;
-    border-radius: var(--border-radius);
+    padding: 2rem 9rem 2rem 2rem;
     border-top-right-radius: 7rem;
 }
 
@@ -77,11 +63,11 @@ body{
 }
 
 .right{
-    padding: var(--padding);
+    padding: 2rem;
     color: white;
     width: 30rem;
     align-self: flex-end;
-    border-radius: var(--border-radius);
+    border-radius: .5rem;
 
     position: relative;
 }
@@ -96,7 +82,7 @@ body{
 
 .bar{
     height: 1rem;
-    background-color: var(--Dark-Blue);
+    background-color: var(--Very-Dark-Blue);
     margin-top: 1rem;
     margin-bottom: 0.5rem;
     border-radius: 2rem;
