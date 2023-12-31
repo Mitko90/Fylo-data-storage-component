@@ -47,6 +47,8 @@ body{
 }
 
 .component{
+    --border-radius: .5rem;
+    --paddinng: 3rem;
     gap: 2rem;
 }
 
@@ -55,7 +57,9 @@ body{
 }
 
 .left{
-    padding: 2rem 9rem 2rem 2rem;
+    pading: var(--padding);
+    padding-right: 9rem;
+    border-radius: var(--border-radius);
     border-top-right-radius: 7rem;
 }
 
@@ -73,11 +77,11 @@ body{
 }
 
 .right{
-    padding: 2rem;
+    padding: var(--padding);
     color: white;
     width: 30rem;
     align-self: flex-end;
-    border-radius: .5rem;
+    border-radius: var(--border-radius);
 
     position: relative;
 }
@@ -92,7 +96,7 @@ body{
 
 .bar{
     height: 1rem;
-    background-color: var(--Very-Dark-Blue);
+    background-color: var(--Dark-Blue);
     margin-top: 1rem;
     margin-bottom: 0.5rem;
     border-radius: 2rem;
